@@ -24,4 +24,4 @@ This part 1 of our AirBnB Clone project aims at making a command line interprete
 #### Starting the Commandline Interpreter
 
 The Commandline Interpreter can be started by executing the command `./console.py`. The `console` can `create`, `show`, `destroy`, and `update` objects.
-Type `help` within the console to get a list of command options and its function.
+Type `help` within the console to get a list of command options and its function for proper use.
