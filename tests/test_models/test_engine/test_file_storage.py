@@ -170,5 +170,5 @@ class TestFileStorage_methods(unittest.TestCase):
             models.storage.reload(None)
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     unittest.main()

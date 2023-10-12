@@ -12,7 +12,6 @@ import unittest
 from datetime import datetime
 from time import sleep
 from models.base_model import BaseModel
-from models.engine.file_storage import FileStorage
 
 class TestBaseModel_instantiation(unittest.TestCase):
     """ Unittest for testing instantiation of BaseModel class"""
