@@ -97,7 +97,7 @@ class TestFileStorage_methods(unittest.TestCase):
         self.assertIn("City." + cty.id, models.storage.all().keys())
         self.assertIn(cty, models.storage.all().values())
         self.assertIn("Amenity." + amy.id, models.storage.all().keys())
-        self.asserIn(amy, models.storage.all().values())
+        self.assertIn(amy, models.storage.all().values())
         self.assertIn("Review." + rvw.id, models.storage.all().keys())
         self.assertIn(rvw, models.storage.all().values())
 
@@ -158,7 +158,7 @@ class TestFileStorage_methods(unittest.TestCase):
         models.storage.new(rvw)
         objs = FileStorage._FileStorage__objects
         self.assertIn("BaseModel." + bmodel.id, objs)
-        self.assertIn("User. " + usr.id, objs)
+        self.assertIn("User." + usr.id, objs)
         self.assertIn("State." + ste.id, objs)
         self.assertIn("Place." + plc.id, objs)
         self.assertIn("City." + cty.id, objs)
