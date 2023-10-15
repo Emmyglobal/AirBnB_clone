@@ -40,7 +40,7 @@ class TestBaseModel_instantiation(unittest.TestCase):
         bmodel1 = BaseModel()
         sleep(0.10)
         bmodel2 = BaseModel()
-        self.assertLess(bmode1.created_at, bmodel2.created_at)
+        self.assertLess(bmodel1.created_at, bmodel2.created_at)
 
     def test_two_models_different_updated_at(self):
         bmodel1 = BaseModel()
@@ -79,9 +79,10 @@ class TestBaseModel_instantiation(unittest.TestCase):
     def test_instantiation_with_args_and_kwargs(self):
         dtime = datetime.today()
         dtime_iso = dtime.isoformat()
-        bmodel = BaseModel("67", id = "345", created_at = dtime_iso, updated_at = dtime_iso)
+        bmodel = BaseModel("12", id = "345", created_at = dtime_iso, updated_at = dtime_iso)
         self.assertEqual(bmodel.id, "345")
-        self.assertEqual(created_at, dtime)
+        self.assertEqual(bmodel.created_at, dtime)
+        self.assertEqual(bmodel.updated_at, dtime)
 
 
 class TestBaseModel_save(unittest.TestCase):
@@ -184,7 +185,7 @@ class TestBaseModel_to_dict(unittest.TestCase):
         self.assertNotEqual(bmodel.to_dict(), bmodel.__dict__)
 
     def test_to_dict_with_args(self):
-        bmodel = Basemodel()
+        bmodel = BaseModel()
         with self.assertRaises(TypeError):
             bmodel.to_dict(None)
 
