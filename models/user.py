@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Defines a User Class"""
+""" Defines a User Class that inherits from BaseModel"""
 
 from models.base_model import BaseModel
 
