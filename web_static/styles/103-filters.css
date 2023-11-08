@@ -1,0 +1,177 @@
+section.filters {
+	color: white;
+	height: 60px;
+	width: auto;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+}
+section.filters button {
+	border: none;
+	background-color: #ff5a5f;
+	color: #ffffff;
+	font-size: 18px;
+	height: 45px;
+	width: 22%;
+	border-radius: 4px;
+	margin: 5px 7px;
+	float: right;
+}
+section.filters button:hover {
+	opacity: 0.9;
+}
+.locations{
+	height: 100%;
+	width: 25%;
+	float: left;
+	border-right: 1px solid #DDDDDD;
+}
+.amenities{
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+.locations h3,
+.amenities h3 {
+	font-weight: 600;
+	color: black;
+	text-align: left;
+	margin-left: 30px;
+	font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+	line-height: 10px;
+}
+.locations h4,
+.amenities h4{
+	font-weight: 400;
+	color: black;
+	font-size: 14px;
+	margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 30px;
+}
+.popover {
+	display: none;
+	color: black;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	position: relative;
+	width: 83%;
+	line-height: 10px;
+	margin: 20px auto;
+}
+.popover li h2{
+	font-size: 16px;
+}
+.locations:hover .popover,
+.amenities:hover .popover {
+	display: flex;
+	flex-direction: column;
+}
+.popover li {
+	list-style-type: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+/*RESPONSIVE LAYOUT For Mobile Phones*/
+@media only screen and (max-width: 500px) {
+	section.filters {
+		color: white;
+		height: 54px;
+		width: auto;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+	}
+	.locations h3,
+	.amenities h3 {
+		font-weight: 600;
+		color: black;
+		text-align: left;
+		margin-left: 10px;
+		font-size: 12px;
+		margin-top: 7px;
+		margin-bottom: 5px;
+		line-height: 12px;
+	}
+	.locations h4,
+	.amenities h4{
+		font-weight: 400;
+		color: black;
+		font-size: 10px;
+		margin-top: 2px;
+		margin-bottom: 0px;
+		text-align: justify;
+		margin-left: 15px;
+	}
+	.popover {
+		display: none;
+		color: black;
+		background-color: #FAFAFA;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		position: relative;
+		width: 120%;
+		line-height: 10px;
+		margin: 20px auto;
+	}
+	.popover li {
+		list-style-type: none;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-align: justify;
+		margin-left: -30px;
+	}
+}
+/*RESPONSIVE LAYOUT For Tablets*/
+@media only screen and (max-width: 800px) {
+	section.filters {
+		color: white;
+		height: 54px;
+		width: auto;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+	}
+	.locations h3,
+	.amenities h3 {
+		font-weight: 600;
+		color: black;
+		text-align: left;
+		margin-left: 10px;
+		font-size: 14px;
+		margin-top: 7px;
+		margin-bottom: 5px;
+		line-height: 12px;
+	}
+	.locations h4,
+	.amenities h4{
+		font-weight: 400;
+		color: black;
+		font-size: 12px;
+		margin-top: 2px;
+		margin-bottom: 0px;
+		text-align: justify;
+		margin-left: 15px;
+	}
+	.popover {
+		display: none;
+		color: black;
+		background-color: #FAFAFA;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		position: relative;
+		width: 100%;
+		line-height: 10px;
+		margin: 20px auto;
+	}
+	.popover li {
+		list-style-type: none;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-align: justify;
+		margin-left: -30px;
+	}
+}
