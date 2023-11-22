@@ -83,7 +83,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_create(self, arg):
-        """Usage: create <class>
+        """Usage: createh <class>
         """
         argl = parse(arg)
         if len(argl) == 0:
